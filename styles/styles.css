@@ -369,6 +369,17 @@ footer p {
 footer p img {
     width: 40px;
 }
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+section {
+    animation: fade-in 1.5s ease-out; /* Duración de la animación: 1 segundo */
+}
 @media screen and (max-width: 768px){
     .about-container {
         height: auto;
