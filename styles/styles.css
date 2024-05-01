@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* Importa los estilos de Tailwind CSS */
+@import '../node_modules/tailwindcss/base.css';
+@import '../node_modules/tailwindcss/components.css';
+@import '../node_modules/tailwindcss/utilities.css';
 
 * {
     margin: 0;
@@ -38,7 +42,7 @@ body {
     align-items: center;
     
 }
-.background {
+.background-snippet {
     position: fixed;
     top: 0;
     right: 0;
@@ -155,7 +159,7 @@ header ul img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100%;
     gap: 20px;
 }
@@ -201,6 +205,7 @@ header ul img {
 }
 
 .services-container {
+    margin-top: 100PX;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,6 +335,7 @@ header ul img {
 
 #submit-button {
     cursor: pointer;
+    background-color: white;
 }
 
 footer {
@@ -368,6 +374,12 @@ footer p img {
         height: auto;
         margin-bottom: 50px;
     }
+    .graficos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 425px){
 
@@ -391,13 +403,22 @@ footer p img {
         width: 95%;
     }
     footer {
-        display: block;
-        justify-content: center
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     footer ul {
         margin-top: 10px;
         justify-content: center;
         padding-bottom: 20px;
     }
+    .graficos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
+
